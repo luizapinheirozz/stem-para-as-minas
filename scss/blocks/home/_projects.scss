@@ -1,0 +1,39 @@
+.projects {
+  &__container {
+    padding-block: $padding1;
+    border-bottom: 1px solid $s2;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__item {
+    flex-grow: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid $s2;
+    height: 550px;
+  }
+
+  &__image {
+    object-fit: cover;
+  }
+
+  &__description {
+    padding-inline: 28px;
+  }
+
+  .btn--secondary {
+    margin: 0 24px 40px;
+  }
+}

@@ -1,0 +1,90 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding-block: 10px;
+  z-index: 1;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  background: transparent;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    gap: 36px;
+  }
+
+  &__image {
+    transition: filter 0.3s ease;
+  }
+
+  &__link {
+    color: $p3;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: $p3;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 5px;
+      transition: width 0.3s ease;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// quando rolar
+.header.scrolled {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(3.5px);
+
+  .header__link {
+    color: $s1;
+
+    &::after {
+      background-color: $s1;
+    }
+  }
+
+  img {
+    filter: brightness(0);
+  }
+}
+
+.hackmundo {
+  .header {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(3.5px);
+    border: 1px solid $s2;
+
+    &__link {
+      color: black;
+
+      &::after {
+        background-color: $s1;
+      }
+    }
+
+    &__image {
+      filter: brightness(0);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.hackmundo-participants {
+  &__container {
+    padding-block: $padding1;
+  }
+
+  &__list {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__item {
+    border: 1px solid $s4;
+    padding: $padding2;
+    flex-grow: 1;
+  }
+
+  &__icon {
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    font-size: 1.125rem;
+  }
+
+  &__requirements-title {
+    margin: 20px 0 5px;
+  }
+
+  &__requirement {
+    color: $s5;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
+  .btn {
+    margin-top: 32px;
+  }
+}

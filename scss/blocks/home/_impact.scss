@@ -1,0 +1,54 @@
+.impact {
+  &__container {
+    padding-block: $padding1;
+  }
+
+  &__list {
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    max-width: 180px;
+    text-align: center;
+
+    &:nth-child(2) {
+      margin-top: -100px;
+    }
+  }
+
+  &__number-wrapper {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__number-wrapper::after {
+    content: "";
+    background-image: url(../../img/impact-detail.svg);
+    width: 250px;
+    height: 180px;
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+  }
+
+  &__number {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4rem;
+    letter-spacing: 2.88px;
+    color: $p1;
+  }
+
+  &__name {
+    font-family: "Bebas Neue", sans-serif;
+    color: $s3;
+    letter-spacing: 1.28px;
+    font-size: 32px;
+    display: inline-block;
+    margin-top: 16px;
+  }
+}

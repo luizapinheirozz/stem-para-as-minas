@@ -1,0 +1,66 @@
+.hackmundo-schedule {
+  &__container {
+    padding-block: $padding2 $padding1;
+    border-bottom: 1px solid $s2;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 44px;
+
+      &::after {
+        content: "";
+        width: 2px;
+        height: 40px;
+        background-color: $s4;
+        display: block;
+        position: absolute;
+        bottom: -40px;
+        left: 20px;
+      }
+    }
+  }
+
+  &__number {
+    background-color: $p2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $s5;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0.72px;
+  }
+
+  &__text {
+    color: $s5;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  &__date {
+    color: $p1;
+    font-family: Afacad;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+}

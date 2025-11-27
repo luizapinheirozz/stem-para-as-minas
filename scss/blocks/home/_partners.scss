@@ -1,0 +1,30 @@
+.partners {
+  padding-block: $padding2;
+  background-color: $s4;
+
+  &__header {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+  }
+
+  &__title {
+    font-size: 32px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}

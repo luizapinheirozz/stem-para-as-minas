@@ -1,0 +1,38 @@
+.hackmundo-about {
+  &__container {
+    border-top: 1px solid $s2;
+    padding-block: $padding1;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__description {
+    max-width: 100ch;
+    padding-left: $padding2;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__text {
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      background-image: url(../../../img/world.svg);
+      display: block;
+      width: 26px;
+      height: 26px;
+      position: absolute;
+      left: -46px;
+    }
+  }
+}

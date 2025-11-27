@@ -1,0 +1,25 @@
+.hackmundo-partners {
+  background-color: $s4;
+  padding: $padding2 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__link {
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}

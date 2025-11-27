@@ -1,0 +1,60 @@
+.hackmundo-awards {
+  &__container {
+    padding-block: $padding1;
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 60px;
+  }
+
+  &__card {
+    flex-grow: 1;
+    border: 1px solid $p1;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    &--first {
+      order: 2;
+      height: calc($hackmundo-card-height + 120px);
+    }
+
+    &--second {
+      order: 1;
+      height: calc($hackmundo-card-height + 60px);
+    }
+
+    &--third {
+      order: 3;
+      height: $hackmundo-card-height;
+    }
+  }
+
+  &__badge {
+    display: inline-block;
+    color: $s5;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 40px;
+    padding: 6px 26px;
+    background-color: $s4;
+    align-self: center;
+  }
+
+  &__item {
+    color: $s5;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}

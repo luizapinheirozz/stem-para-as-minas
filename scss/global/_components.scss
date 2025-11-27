@@ -1,0 +1,48 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 12px 42px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+
+  &--primary {
+    color: $s1;
+    background-color: $p2;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $s1;
+    }
+  }
+
+  &--secondary {
+    background-color: $p1;
+    color: $p3;
+    text-align: center;
+
+    &:hover {
+      color: $s1;
+      background-color: transparent;
+      border-color: $s1;
+    }
+  }
+
+  &--terciary {
+    background-color: transparent;
+    border-color: $s1;
+
+    &:hover {
+      background-color: $p1;
+      color: $p3;
+    }
+  }
+}
