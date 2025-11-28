@@ -6,6 +6,10 @@
   background-size: cover;
   background-position: center;
 
+  @include responsive(sm) {
+    background-position-x: -600px;
+  }
+
   &__container {
     position: absolute;
     bottom: 100px;
@@ -14,10 +18,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
+
+    @include responsive(sm) {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+      bottom: 20px;
+    }
   }
 
   &__title {
     color: $p3;
     max-width: 780px;
+
+    @include responsive(sm) {
+      order: 1;
+    }
+  }
+
+  &__image {
+    @include responsive(lg) {
+      max-width: 150px;
+    }
   }
 }

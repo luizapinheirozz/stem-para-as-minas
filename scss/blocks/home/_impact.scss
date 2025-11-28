@@ -1,12 +1,20 @@
 .impact {
   &__container {
     padding-block: $padding1;
+
+    @include responsive(xl) {
+      padding-block: 60px;
+    }
   }
 
   &__list {
     margin-top: 160px;
     display: flex;
     justify-content: space-around;
+
+    @include responsive(lg) {
+      margin-top: 100px;
+    }
   }
 
   &__item {
@@ -29,11 +37,31 @@
   &__number-wrapper::after {
     content: "";
     background-image: url(../../img/impact-detail.svg);
+    background-repeat: no-repeat;
     width: 250px;
     height: 180px;
     position: absolute;
     z-index: -1;
     top: -40px;
+
+    @include responsive(xl) {
+      background-size: contain;
+      width: 170px;
+      top: 0;
+      left: 15px;
+      height: 120px;
+    }
+
+    @include responsive(sm) {
+      width: 120px;
+      height: 100px;
+      top: 15px;
+      left: 20px;
+    }
+
+    @include responsive(xs) {
+      background-image: none;
+    }
   }
 
   &__number {
@@ -41,14 +69,32 @@
     font-size: 4rem;
     letter-spacing: 2.88px;
     color: $p1;
+
+    @include responsive(xl) {
+      font-size: 3rem;
+    }
+
+    @include responsive(sm) {
+      font-size: 2rem;
+    }
   }
 
   &__name {
     font-family: "Bebas Neue", sans-serif;
     color: $s3;
     letter-spacing: 1.28px;
-    font-size: 32px;
+    font-size: 2rem;
     display: inline-block;
     margin-top: 16px;
+
+    @include responsive(xl) {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+
+    @include responsive(sm) {
+      margin-top: -20px;
+      font-size: 18px;
+    }
   }
 }

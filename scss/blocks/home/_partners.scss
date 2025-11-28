@@ -18,6 +18,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include responsive(xl) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      row-gap: 50px;
+    }
+
+    @include responsive(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__link {

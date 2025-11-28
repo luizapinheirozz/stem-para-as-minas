@@ -16,6 +16,10 @@
   &__list {
     display: flex;
     gap: 36px;
+
+    @include responsive(xl) {
+      display: none;
+    }
   }
 
   &__image {
