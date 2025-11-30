@@ -1,6 +1,10 @@
 .hackmundo-awards {
   &__container {
     padding-block: $padding1;
+
+    @include responsive(xl) {
+      padding-block: 60px;
+    }
   }
 
   &__header {
@@ -13,6 +17,15 @@
     justify-content: space-between;
     gap: 80px;
     margin-top: 60px;
+
+    @include responsive(xl) {
+      gap: 20px;
+    }
+
+    @include responsive(lg) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__card {
@@ -26,16 +39,31 @@
     &--first {
       order: 2;
       height: calc($hackmundo-card-height + 120px);
+
+      @include responsive(lg) {
+        order: 1;
+        height: auto;
+      }
     }
 
     &--second {
       order: 1;
       height: calc($hackmundo-card-height + 60px);
+
+      @include responsive(lg) {
+        order: 2;
+        height: auto;
+      }
     }
 
     &--third {
       order: 3;
       height: $hackmundo-card-height;
+
+      @include responsive(lg) {
+        order: 2;
+        height: auto;
+      }
     }
   }
 
@@ -43,18 +71,26 @@
     display: inline-block;
     color: $s5;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
     border-radius: 40px;
     padding: 6px 26px;
     background-color: $s4;
     align-self: center;
+
+    @include responsive(sm) {
+      font-size: 1.5rem;
+    }
   }
 
   &__item {
     color: $s5;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 500;
     line-height: 150%;
+
+    @include responsive(sm) {
+      font-size: 18px;
+    }
   }
 }

@@ -3,6 +3,11 @@
   display: flex;
   align-items: center;
 
+  @include responsive(xs) {
+    height: auto;
+    padding-block: 160px 60px;
+  }
+
   &__container {
     text-align: center;
   }
@@ -14,12 +19,20 @@
     padding: 8px 22px;
     background-color: $s4;
     border-radius: 50px;
+
+    @include responsive(sm) {
+      font-size: 1rem;
+    }
   }
 
   &__title {
     color: #000;
     font-size: 4rem;
     font-weight: 400;
+
+    @include responsive(sm) {
+      font-size: 3rem;
+    }
   }
 
   &__highlight {
@@ -34,14 +47,22 @@
     font-size: 1.5rem;
     font-family: "Afacad", sans-serif;
     font-weight: 500;
+
+    @include responsive(sm) {
+      font-size: 1.125rem;
+    }
   }
 
   &__description {
     color: $s5;
-    font-size: 1.75rem;
+    font-size: 28px;
     font-weight: 500;
     max-width: 740px;
     margin: 28px auto 28px;
+
+    @include responsive(sm) {
+      font-size: 20px;
+    }
   }
 
   &__actions {
@@ -50,7 +71,15 @@
     gap: 10px;
 
     .btn {
-      width: 180px;
+      width: 250px;
+    }
+
+    @include responsive(xs) {
+      flex-direction: column;
+
+      .btn {
+        width: 100%;
+      }
     }
   }
 
@@ -59,6 +88,28 @@
     display: flex;
     justify-content: center;
     gap: 180px;
+
+    @include responsive(md) {
+      gap: 90px;
+    }
+
+    @include responsive(sm) {
+      gap: 45px;
+    }
+
+    @include responsive(xs) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      gap: 40px 10px;
+    }
+  }
+
+  &__item {
+    &:last-child {
+      grid-column: 1/-1;
+    }
   }
 
   &__number {

@@ -2,12 +2,32 @@
   &__container {
     border-top: 1px solid $s2;
     padding-block: $padding1;
+
+    @include responsive(xl) {
+      padding-block: 60px;
+    }
   }
 
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+
+    @include responsive(xl) {
+      margin-top: 20px;
+    }
+
+    @include responsive(lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    @include responsive(lg) {
+    }
   }
 
   &__description {
@@ -16,6 +36,10 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @include responsive(xl) {
+      max-width: 75ch;
+    }
   }
 
   &__text {
@@ -33,6 +57,16 @@
       height: 26px;
       position: absolute;
       left: -46px;
+    }
+
+    @include responsive(xl) {
+      font-size: 18px;
+    }
+  }
+
+  &__image {
+    @include responsive(sm) {
+      max-width: 250px;
     }
   }
 }

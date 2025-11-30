@@ -5,15 +5,15 @@
   background-position: center;
 
   &--menu-white {
-    background-image: url(../../img/icons/icon-menu.svg);
+    background-image: url(../img/icons/icon-menu.svg);
   }
 
   &--menu-black {
-    background-image: url(../../img/icons/icon-menu.svg);
+    background-image: url(../img/icons/icon-menu.svg);
     filter: brightness(0);
   }
 
   &--close {
-    background-image: url(../../img/icons/icon-close.svg);
+    background-image: url(../img/icons/icon-close.svg);
   }
 }

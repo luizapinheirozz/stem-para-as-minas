@@ -7,12 +7,25 @@
     align-items: center;
     justify-content: center;
     gap: 120px;
+
+    @include responsive(lg) {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+
+  &__header {
+    text-align: center;
   }
 
   &__list {
     display: flex;
     gap: 40px;
     align-items: center;
+
+    @include responsive(lg) {
+      gap: 0;
+    }
   }
 
   &__link {

@@ -23,7 +23,7 @@ h4 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 3rem;
   letter-spacing: 2.08px;
 
   @include responsive(xl) {
@@ -35,11 +35,27 @@ h3 {
   font-size: 1.5rem;
   font-weight: 500;
   color: $s5;
+
+  @include responsive(xl) {
+    font-size: 1.25rem;
+  }
 }
 
 h4 {
   font-size: 2rem;
   letter-spacing: 1.28px;
+
+  @include responsive(xl) {
+    font-size: 1.75rem;
+  }
+
+  @include responsive(md) {
+    font-size: 1.5rem;
+  }
+
+  @include responsive(xs) {
+    font-size: 1.25rem;
+  }
 }
 
 h5 {

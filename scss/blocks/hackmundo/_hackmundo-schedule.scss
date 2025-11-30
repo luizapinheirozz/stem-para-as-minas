@@ -2,6 +2,10 @@
   &__container {
     padding-block: $padding2 $padding1;
     border-bottom: 1px solid $s2;
+
+    @include responsive(xl) {
+      padding-bottom: 60px;
+    }
   }
 
   &__header {
@@ -35,6 +39,10 @@
         left: 20px;
       }
     }
+
+    @include responsive(xs) {
+      gap: 20px;
+    }
   }
 
   &__number {
@@ -49,12 +57,26 @@
     font-size: 1.125rem;
     font-weight: 700;
     letter-spacing: 0.72px;
+
+    @include responsive(xs) {
+      font-size: 16px;
+      width: 35px;
+      height: 35px;
+    }
   }
 
   &__text {
     color: $s5;
     font-size: 1.25rem;
     font-weight: 500;
+
+    @include responsive(md) {
+      font-size: 1.125rem;
+    }
+
+    @include responsive(xs) {
+      font-size: 1rem;
+    }
   }
 
   &__date {
@@ -62,5 +84,15 @@
     font-family: Afacad;
     font-size: 1.125rem;
     font-weight: 500;
+
+    @include responsive(md) {
+      font-size: 1rem;
+    }
+  }
+
+  &__remove-mobile {
+    @include responsive(sm) {
+      display: none;
+    }
   }
 }

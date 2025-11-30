@@ -20,10 +20,9 @@
     align-items: center;
 
     @include responsive(xl) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-items: center;
-      row-gap: 50px;
+      gap: 60px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     @include responsive(sm) {
