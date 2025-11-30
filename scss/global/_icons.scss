@@ -1,0 +1,19 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--menu-white {
+    background-image: url(../../img/icons/icon-menu.svg);
+  }
+
+  &--menu-black {
+    background-image: url(../../img/icons/icon-menu.svg);
+    filter: brightness(0);
+  }
+
+  &--close {
+    background-image: url(../../img/icons/icon-close.svg);
+  }
+}

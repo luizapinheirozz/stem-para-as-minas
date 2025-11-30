@@ -92,3 +92,11 @@
     }
   }
 }
+
+.icon--menu {
+  display: none;
+
+  @include responsive(xl) {
+    display: block;
+  }
+}

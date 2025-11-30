@@ -28,7 +28,7 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
-              <a href="./" class="header__link">Início </a>
+              <a href="./" class="header__link" aria-current="page">Início </a>
             </li>
 
             <li class="header__item">
@@ -42,12 +42,7 @@
             </li>
 
             <li class="header__item">
-              <a
-                href="./hackmundo.html"
-                class="header__link"
-                aria-current="page"
-                >HackMundo</a
-              >
+              <a href="./hackmundo.html" class="header__link">HackMundo</a>
             </li>
 
             <li class="header__item">
@@ -63,8 +58,58 @@
             </li>
           </ul>
         </nav>
+
+        <a href="#menu" class="icon icon--menu icon--menu-black"></a>
       </div>
     </header>
+
+    <aside class="menu" id="menu">
+      <div class="menu__container container">
+        <div class="menu__top-bar">
+          <a href="./" class="menu__logo">
+            <img src="./img/logo-stem.svg" alt="STEM para as minas" />
+          </a>
+
+          <a href="#" class="icon icon--close"></a>
+        </div>
+
+        <div class="menu__content">
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="./" class="menu__link">Início</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="./sobre.html" class="menu__link">Sobre Nós</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="./pesquisa.html" class="menu__link"
+                  >Pesquisa para Elas</a
+                >
+              </li>
+
+              <li class="menu__item">
+                <a href="./hackmundo.html" class="menu__link">HackMundo</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="./embaixadoras.html" class="menu__link"
+                  >Embaixadoras</a
+                >
+              </li>
+
+              <li class="menu__item">
+                <a href="./contato.html" class="menu__link"
+                  >Contato e Parcerias</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
 
     <main>
       <section class="hackmundo-home">
