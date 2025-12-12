@@ -1,4 +1,4 @@
-.hackmundo-awards {
+.hackstem-awards {
   &__container {
     padding-block: $padding1;
 
@@ -38,7 +38,7 @@
 
     &--first {
       order: 2;
-      height: calc($hackmundo-card-height + 120px);
+      height: calc($hackstem-card-height + 120px);
 
       @include responsive(lg) {
         order: 1;
@@ -48,7 +48,7 @@
 
     &--second {
       order: 1;
-      height: calc($hackmundo-card-height + 60px);
+      height: calc($hackstem-card-height + 60px);
 
       @include responsive(lg) {
         order: 2;
@@ -58,7 +58,7 @@
 
     &--third {
       order: 3;
-      height: $hackmundo-card-height;
+      height: $hackstem-card-height;
 
       @include responsive(lg) {
         order: 2;

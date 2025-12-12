@@ -52,7 +52,12 @@
   }
 
   &__image {
-    object-fit: cover;
+    box-sizing: border-box;
+    object-fit: contain;
+    padding: 60px;
+    background: linear-gradient(180deg, #c89adc 35.58%, #621ea6 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 295px;
     width: 100%;
   }

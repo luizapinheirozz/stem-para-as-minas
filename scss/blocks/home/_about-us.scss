@@ -34,6 +34,10 @@
   }
 
   &__image {
+    img {
+      border-radius: 50%;
+    }
+
     @include responsive(lg) {
       max-width: 300px;
     }

@@ -1,0 +1,96 @@
+/* ======================================
+   HERO — Editorial Moderno e Elegante
+====================================== */
+
+.leadership-home {
+  padding-block: 180px 120px;
+  background: #fff;
+
+  @include responsive(md) {
+    padding-block: 120px;
+  }
+
+  @include responsive(sm) {
+    padding-bottom: 0;
+  }
+
+  .leadership-hero__container {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+
+    @include responsive(sm) {
+      text-align: left;
+    }
+  }
+
+  .leadership-hero__badge {
+    background: rgba($s7, 0.12);
+    color: $s7;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 50px;
+  }
+
+  .leadership-hero__title {
+    font-size: 3.6rem;
+    font-weight: 600;
+    max-width: 720px;
+    line-height: 1.15;
+    color: $s1;
+    letter-spacing: -0.5px;
+
+    @include responsive(md) {
+      font-size: 3rem;
+    }
+
+    @include responsive(sm) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .leadership-hero__highlight {
+    color: $s7;
+    font-weight: 700;
+  }
+
+  .leadership-hero__subtitle {
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: $s7;
+    max-width: 700px;
+    line-height: 1.5;
+
+    @include responsive(sm) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .leadership-hero__description {
+    color: $s5;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 680px;
+  }
+
+  .leadership-hero__actions {
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+
+    @include responsive(xs) {
+      // flex-direction: column;
+      font-size: 12px;
+      width: 100%;
+
+      .btn {
+        width: 100%;
+        padding-inline: 0;
+        text-align: center;
+      }
+    }
+  }
+}

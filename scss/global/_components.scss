@@ -47,6 +47,16 @@
     }
   }
 
+  &--quaternary {
+    background-color: $p2;
+    color: $s1;
+
+    &:hover {
+      background-color: $p3;
+      border-color: $s1;
+    }
+  }
+
   @include responsive(sm) {
     font-size: 18px;
     padding-inline: 24px;

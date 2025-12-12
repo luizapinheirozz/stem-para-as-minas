@@ -1,25 +1,32 @@
 @import "./global/variables";
-@import "./global/reset.scss";
+@import "./global/reset";
 @import "./global/responsive";
-@import "./global/components.scss";
-@import "./global/typograph.scss";
+@import "./global/components";
+@import "./global/typograph";
 @import "./global/header";
 @import "./global/icons";
 @import "./global/menu";
 @import "./global/footer";
 
 // home
-@import "./blocks/home/hero.scss";
+@import "./blocks/home/hero";
 @import "./blocks/home/about-us";
 @import "./blocks/home/projects";
 @import "./blocks/home/impact";
 @import "./blocks/home/partners";
 
-// hackmundo
-@import "./blocks/hackmundo/hackmundo-home.scss";
-@import "./blocks/hackmundo/hackmundo-about.scss";
-@import "./blocks/hackmundo/hackmundo-ods.scss";
-@import "./blocks/hackmundo/hackmundo-participants";
-@import "./blocks/hackmundo/hackmundo-schedule";
-@import "./blocks/hackmundo/hackmundo-awards";
-@import "./blocks/hackmundo/hackmundo-partners";
+// hackstem
+@import "./blocks/hackstem/hackstem-home";
+@import "./blocks/hackstem/hackstem-about";
+@import "./blocks/hackstem/hackstem-ods";
+@import "./blocks/hackstem/hackstem-participants";
+@import "./blocks/hackstem/hackstem-schedule";
+@import "./blocks/hackstem/hackstem-awards";
+@import "./blocks/hackstem/hackstem-partners";
+
+// lideranca
+@import "./blocks/lideranca/lideranca-home";
+@import "./blocks/lideranca/lideranca-about";
+@import "./blocks/lideranca/lideranca-modules";
+@import "./blocks/lideranca/lideranca-requirements";
+@import "./blocks/lideranca/lideranca-testimonials";

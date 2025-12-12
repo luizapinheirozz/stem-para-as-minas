@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
@@ -37,18 +42,16 @@
 
             <li class="header__item">
               <a href="./pesquisa.html" class="header__link"
-                >Pesquisa para Elas</a
+                >Elas na Pesquisa</a
               >
             </li>
 
             <li class="header__item">
-              <a href="./hackmundo.html" class="header__link">HackMundo</a>
+              <a href="./hackstem.html" class="header__link">HackStem</a>
             </li>
 
             <li class="header__item">
-              <a href="./embaixadoras.html" class="header__link"
-                >Embaixadoras</a
-              >
+              <a href="./lideranca.html" class="header__link">Liderança</a>
             </li>
 
             <li class="header__item">
@@ -86,18 +89,16 @@
 
               <li class="menu__item">
                 <a href="./pesquisa.html" class="menu__link"
-                  >Pesquisa para Elas</a
+                  >Elas na Pesquisa</a
                 >
               </li>
 
               <li class="menu__item">
-                <a href="./hackmundo.html" class="menu__link">HackMundo</a>
+                <a href="./hackstem.html" class="menu__link">HackMundo</a>
               </li>
 
               <li class="menu__item">
-                <a href="./embaixadoras.html" class="menu__link"
-                  >Embaixadoras</a
-                >
+                <a href="./lideranca.html" class="menu__link">Liderança</a>
               </li>
 
               <li class="menu__item">
@@ -174,9 +175,8 @@
             <li class="projects__item">
               <img
                 class="projects__image"
-                src="./img/pesquisa-card.png"
-                alt="Pesquisa para elas"
-                loading="lazy"
+                src="./img/pesquisa-card.svg"
+                alt="Elas na Pesquisa"
               />
               <p class="projects__description">
                 Pesquisa Para Elas é um programa de mentoria gratuito com o
@@ -190,9 +190,8 @@
             <li class="projects__item">
               <img
                 class="projects__image"
-                src="./img/hackmundo-card.png"
+                src="./img/hackstem-card.svg"
                 alt="HackMundo"
-                loading="lazy"
               />
               <p class="projects__description">
                 O HackMundo é uma competição online e gratuita no estilo
@@ -205,15 +204,14 @@
             <li class="projects__item">
               <img
                 class="projects__image"
-                src="./img/embaixadoras-card.png"
-                alt="Programa de Embaixadoras"
+                src="./img/lideranca-card.svg"
+                alt="Programa de Liderança"
                 width="400"
                 height="295"
-                loading="lazy"
               />
               <p class="projects__description">
-                O Programa de Embaixadoras forma meninas líderes que levam o
-                STEM para dentro de suas escolas e comunidades, multiplicando
+                O Programa de Liderança forma meninas líderes que levam o STEM
+                para dentro de suas escolas e comunidades, multiplicando
                 conhecimento e oportunidades onde elas vivem.
               </p>
               <a href="#" class="btn btn--secondary">Saiba Mais</a>
@@ -265,8 +263,8 @@
             <li class="partners__item">
               <a href="#" class="partners__link">
                 <img
-                  src="./img/partners/technovation-girls.svg"
-                  alt="Technovation Girls Brasil"
+                  src="./img/partners/samsung.svg"
+                  alt="Samsung"
                   class="partners__image"
                   loading="lazy"
                 />
@@ -276,8 +274,8 @@
             <li class="partners__item">
               <a href="#" class="partners__link">
                 <img
-                  src="./img/partners/girl-up.svg"
-                  alt="Girl Up"
+                  src="./img/partners/ifood.svg"
+                  alt="iFood"
                   class="partners__image"
                   loading="lazy"
                 />
@@ -287,8 +285,8 @@
             <li class="partners__item">
               <a href="#" class="partners__link">
                 <img
-                  src="./img/partners/fundacao-estudar.svg"
-                  alt="Fundação Estudar"
+                  src="./img/partners/usp.svg"
+                  alt="USP"
                   class="partners__image"
                   loading="lazy"
                 />
@@ -298,8 +296,8 @@
             <li class="partners__item">
               <a href="#" class="partners__link">
                 <img
-                  src="./img/partners/developer-girls.svg"
-                  alt="Developer Girls"
+                  src="./img/partners/fiap.svg"
+                  alt="FIAP"
                   class="partners__image"
                   loading="lazy"
                 />
@@ -309,8 +307,8 @@
             <li class="partners__item">
               <a href="#" class="partners__link">
                 <img
-                  src="./img/partners/edumi.svg"
-                  alt="Edumi"
+                  src="./img/partners/nvidia.svg"
+                  alt="NVIDIA"
                   class="partners__image"
                   loading="lazy"
                 />
@@ -321,9 +319,107 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer__container container">
-        <h2 class="footer__title">Footer - Code 4 Causes</h2>
+    <footer class="site-footer" id="contato">
+      <div class="footer-content">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="./img/logo-black.svg" alt="STEM girls" />
+            </div>
+            <p class="brand-description">
+              Promovendo oportunidades em Ciência, Tecnologia, Engenharia e
+              Matemática (STEM) para meninas e mulheres de todo o Brasil.
+            </p>
+
+            <div class="social-links">
+              <a
+                href="[LINK_INSTAGRAM]"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="[LINK_REDE_SOCIAL]"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Rede Social"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="[LINK_WHATSAPP]"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="WhatsApp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-title">Navegação</h4>
+            <nav>
+              <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#como-apoiar">Como Apoiar</a></li>
+                <li><a href="#contato">Contato</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="footer-title">Fale Conosco</h4>
+            <ul>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:email@ong.com.br">contato@stemgirls.com</a>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>55 11 984567382</span>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>São Paulo/SP</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-large-logo">
+            <img src="./img/logo-purple.svg" alt="STEM girls" />
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-credits">
+          <div class="credits-text">
+            <p>&copy; 2025 STEM girls. Todos os direitos reservados.</p>
+            <p class="institute-credit">
+              Desenvolvido com <i class="fas fa-heart"></i> pelo
+              <a
+                href="https://www.instagram.com/code4causes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="institute-link"
+                >Instituto Code for Causes</a
+              >
+            </p>
+          </div>
+          <div class="credits-links">
+            <a href="#">Política de Privacidade</a>
+            <span class="separator">|</span>
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
       </div>
     </footer>
 

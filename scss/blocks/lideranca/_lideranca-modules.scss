@@ -1,0 +1,84 @@
+/* ===== MÓDULOS ===== */
+.leadership-modules {
+  padding: 100px 0;
+  background: #faf8ff; /* fundo lilás beeem suave */
+}
+
+.leadership-modules__container {
+  text-align: center;
+}
+
+.leadership-modules__title {
+  font-size: 2.4rem;
+  color: $s7;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.leadership-modules__subtitle {
+  font-size: 1.3rem;
+  color: $s7;
+  font-weight: 500;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+}
+
+/* ==== LISTA DE MÓDULOS ==== */
+.leadership-modules__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.leadership-modules__item {
+  background: #fff;
+  border-radius: 18px;
+  padding: 35px 25px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(70, 28, 129, 0.07);
+  border: 1px solid rgba(102, 60, 160, 0.1);
+  transition: 0.25s ease;
+}
+
+.leadership-modules__item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(70, 28, 129, 0.15);
+}
+
+/* Nome do módulo */
+.leadership-modules__name {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: $s1;
+  font-weight: 700;
+}
+
+/* Texto */
+.leadership-modules__text {
+  font-size: 1rem;
+  color: #4b4b4b;
+  line-height: 1.5;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 1024px) {
+  .leadership-modules__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .leadership-modules {
+    padding: 70px 0;
+  }
+
+  .leadership-modules__list {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-modules__item {
+    text-align: center;
+  }
+}

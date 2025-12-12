@@ -1,0 +1,61 @@
+/* ===== REQUISITOS ===== */
+.leadership-requirements {
+  padding: 60px 0 120px;
+  background: linear-gradient(135deg, #f8f3ff 0%, #faf8ff 40%, #ffffff 100%);
+}
+
+.leadership-requirements__container {
+  text-align: center;
+  max-width: 750px;
+}
+
+.leadership-requirements__title {
+  font-size: 2.2rem;
+  color: $s7;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* LISTA */
+.leadership-requirements__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.leadership-requirements__item {
+  font-size: 1.15rem;
+  padding: 15px 25px;
+  border-radius: 14px;
+  background: #fff;
+  color: #4b4b4b;
+  font-weight: 500;
+  text-align: left;
+  box-shadow: 0px 6px 20px rgba(80, 33, 140, 0.07);
+  border-left: 6px solid $p2;
+  transition: 0.25s ease;
+}
+
+.leadership-requirements__item:hover {
+  transform: translateX(6px);
+  box-shadow: 0px 10px 28px rgba(80, 33, 140, 0.12);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 650px) {
+  .leadership-requirements {
+    padding: 80px 0;
+  }
+
+  .leadership-requirements__item {
+    font-size: 1rem;
+    padding: 12px 18px;
+  }
+
+  .btn.btn--primary {
+    width: 100%;
+  }
+}

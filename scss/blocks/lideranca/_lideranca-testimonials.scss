@@ -1,0 +1,77 @@
+/* ===== DEPOIMENTOS ===== */
+.leadership-testimonials {
+  padding: 80px 0 140px;
+  background: #ffffff;
+}
+
+.leadership-testimonials__container {
+  text-align: center;
+  max-width: 850px;
+}
+
+.leadership-testimonials__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: $s7;
+  margin-bottom: 10px;
+}
+
+.leadership-testimonials__subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #6a6a6a;
+  margin-bottom: 60px;
+}
+
+/* LISTA */
+.leadership-testimonials__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+.leadership-testimonials__item {
+  background: linear-gradient(145deg, #ffffff, #f7f1ff);
+  padding: 30px 28px;
+  border-radius: 22px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(80, 33, 140, 0.08);
+  border: 1px solid rgba(120, 80, 170, 0.12);
+  transition: 0.3s ease;
+}
+
+.leadership-testimonials__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(80, 33, 140, 0.12);
+}
+
+.leadership-testimonials__text {
+  font-size: 1.1rem;
+  color: #4b4b4b;
+  line-height: 1.55;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+.leadership-testimonials__author {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $s7;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 850px) {
+  .leadership-testimonials__list {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .leadership-testimonials__text {
+    font-size: 1rem;
+  }
+}

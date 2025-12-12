@@ -1,4 +1,4 @@
-.hackmundo-partners {
+.hackstem-partners {
   background-color: $s4;
   padding: $padding2 0;
 
@@ -24,7 +24,7 @@
     align-items: center;
 
     @include responsive(lg) {
-      gap: 0;
+      gap: 20px;
     }
   }
 

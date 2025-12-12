@@ -1,4 +1,3 @@
-
 body,
 h1,
 h2,
@@ -35,7 +34,7 @@ button {
 :root {
   --cor-roxo-escuro: #621ea6;
   --cor-amarelo: #ffde59;
-  --cor-amarelo-claro:#fff2b7;
+  --cor-amarelo-claro: #fff2b7;
   --cor-lilas: #e2c4ff;
   --cor-branco: #ffffff;
   --cor-preto: #000000;
@@ -53,7 +52,9 @@ body {
   line-height: 1.6;
 }
 
-p, span, li {
+p,
+span,
+li {
   color: var(--cor-cinza-texto);
 }
 
@@ -76,7 +77,6 @@ h6 {
   padding: 0 20px;
 }
 
-
 .btn {
   box-sizing: border-box;
   border-radius: 8px;
@@ -97,7 +97,6 @@ h6 {
   border-color: var(--cor-roxo-escuro);
   color: var(--cor-roxo-escuro);
 }
-
 
 .header {
   position: fixed;
@@ -168,7 +167,6 @@ h6 {
   filter: brightness(0);
 }
 
-
 .icon {
   width: 24px;
   height: 24px;
@@ -184,7 +182,6 @@ h6 {
 .icon--close {
   background-image: url(../img/icons/icon-close.svg);
 }
-
 
 .menu {
   position: fixed;
@@ -238,7 +235,6 @@ h6 {
   width: 100%;
 }
 
-
 main {
   background: var(--cor-branco);
   min-height: 100vh;
@@ -261,6 +257,7 @@ main {
   color: var(--cor-roxo-escuro);
   margin-bottom: 32px;
   line-height: 1.2;
+  padding-top: 80px;
 }
 
 .pesquisa-descricao__text {
@@ -327,7 +324,7 @@ main {
 .pesquisa-impacto__item:hover {
   transform: translateY(-8px);
   background: var(--cor-lilas);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .pesquisa-impacto__number-wrapper {
@@ -379,7 +376,6 @@ main {
   line-height: 1.6;
 }
 
-
 .pesquisa-funcionamento__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -388,7 +384,6 @@ main {
   margin: 0 auto;
   position: relative;
 }
-
 
 .pesquisa-funcionamento__item {
   background: var(--cor-card-bg);
@@ -399,13 +394,11 @@ main {
   transition: all 0.3s ease;
 }
 
-
 .pesquisa-funcionamento__item:hover {
   background: var(--cor-lilas);
   transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
-
 
 .pesquisa-funcionamento__item::before {
   content: "➜";
@@ -488,7 +481,7 @@ main {
 .pesquisa-depoimentos .carousel__item:hover {
   transform: translateY(-8px);
   background: var(--cor-lilas);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .pesquisa-depoimentos .carousel__item * {
@@ -537,7 +530,7 @@ main {
 }
 
 .pesquisa-depoimentos .carousel__arrow:focus-visible {
-  outline: 3px solid #4A90E2;
+  outline: 3px solid #4a90e2;
   outline-offset: 2px;
 }
 
@@ -548,7 +541,6 @@ main {
 .pesquisa-depoimentos .carousel__arrow--next {
   right: -24px;
 }
-
 
 .pesquisa-depoimentos__name {
   font-size: 24px;
@@ -567,7 +559,6 @@ main {
   padding: 0 40px;
   position: relative;
 }
-
 
 .pesquisa-depoimentos__container {
   max-width: 1400px;
@@ -778,7 +769,6 @@ main {
     gap: 80px;
   }
 
-  
   .pesquisa-funcionamento__item::after {
     width: 2px;
     height: 50px;
@@ -791,5 +781,292 @@ main {
     transform: translateX(-50%);
     opacity: 0.4;
   }
+}
 
+.pesquisa .header {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(3.5px);
+  border: 1px solid rgb(180, 180, 180);
+}
+
+.pesquisa .header__link {
+  color: black;
+}
+
+.pesquisa .header__link::after {
+  background-color: #000;
+}
+
+.pesquisa .header__image {
+  filter: brightness(0);
+}
+
+/* =========================================
+   CONFIGURAÇÃO DE CORES (EDITAR AQUI)
+   ========================================= */
+:root {
+  /* Cor de Fundo do Footer (Geralmente a cor primária escura da marca) */
+  --footer-bg: #621ea6;
+
+  /* Cor do Texto (Geralmente cinza claro ou branco) */
+  --footer-text: #fff;
+
+  /* Cor dos Títulos (Branco ou destaque claro) */
+  --footer-title: #ffde59;
+
+  /* Cor de Destaque (Cor secundária da marca para hover e ícones) */
+  --accent-color: #ffde59;
+
+  /* Espaçamentos Padrão (Não alterar) */
+  --spacing-md: 1rem;
+  --spacing-xl: 4rem;
+}
+
+/* =========================================
+   CONFIGURAÇÃO DE CORES (EDITAR AQUI)
+   ========================================= */
+:root {
+  /* Cor de Fundo do Footer (Geralmente a cor primária escura da marca) */
+  --footer-bg: #fff;
+
+  /* Cor do Texto (Geralmente cinza claro ou branco) */
+  --footer-text: #000;
+
+  /* Cor dos Títulos (Branco ou destaque claro) */
+  --footer-title: #621ea6;
+
+  /* Cor de Destaque (Cor secundária da marca para hover e ícones) */
+  --accent-color: #47127d;
+
+  /* Espaçamentos Padrão (Não alterar) */
+  --spacing-md: 1rem;
+  --spacing-xl: 4rem;
+}
+
+/* =========================================
+  ESTRUTURA 
+   ========================================= */
+.site-footer {
+  border-top: 1px solid #bebebe;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: var(--spacing-xl) 0 2rem;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+  align-items: start;
+}
+
+/* --- Elementos Internos --- */
+
+/* Marca */
+.footer-logo img {
+  max-width: 140px;
+  height: auto;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.brand-description {
+  color: var(--footer-text);
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 300px; /* Limita largura do texto para não esticar */
+}
+
+/* Redes Sociais */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-icon {
+  color: var(--footer-text);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+/* Títulos e Listas */
+.footer-links h4,
+.footer-contact h4 {
+  color: var(--footer-title);
+  margin-bottom: 1.25rem;
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer-links ul,
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 0.75rem;
+  color: var(--footer-text);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.footer-links li a {
+  color: var(--footer-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: var(--accent-color);
+  padding-left: 5px;
+}
+
+/* Contato */
+.footer-contact i {
+  color: var(--accent-color);
+  width: 20px;
+  text-align: center;
+}
+
+.footer-contact a {
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: var(--accent-color);
+}
+
+/* Logo Decorativa Grande */
+.footer-large-logo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-large-logo img {
+  max-width: 150px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.footer-large-logo img:hover {
+  opacity: 1;
+}
+
+/* Créditos e Divisor */
+.footer-divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.footer-credits {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* Animação do Coração Code for Causes */
+.institute-credit .fa-heart {
+  color: #e53e3e;
+  animation: heartbeat 1.5s infinite;
+}
+
+.institute-link {
+  color: var(--footer-text);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--footer-text);
+}
+
+.institute-link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.credits-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.credits-links a {
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+.credits-links a:hover {
+  text-decoration: underline;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsividade (Mobile) */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 3rem 0 2rem;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .footer-links li {
+    justify-content: center;
+  }
+  .footer-large-logo {
+    display: none;
+  } /* Oculta logo decorativa no mobile */
+  .social-links {
+    justify-content: center;
+  }
+  .footer-contact li {
+    justify-content: center;
+  }
+  .brand-description {
+    margin: 1rem auto;
+  }
+}
+
+.footer-title {
+  font-family: "Poppins", sans-serif;
 }

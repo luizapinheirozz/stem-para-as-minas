@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackStem</title>
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body class="hackstem">
+    <header class="header">
+      <div class="header__container container">
+        <a href="./"
+          ><img
+            src="./img/logo-stem.svg"
+            alt="Logo STEM girls"
+            class="header__image"
+        /></a>
+
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="./" class="header__link" aria-current="page">Início</a>
+            </li>
+
+            <li class="header__item">
+              <a href="./sobre.html" class="header__link">Sobre Nós</a>
+            </li>
+
+            <li class="header__item">
+              <a href="./pesquisa.html" class="header__link"
+                >Elas na Pesquisa</a
+              >
+            </li>
+
+            <li class="header__item">
+              <a href="./hackstem.html" class="header__link">HackStem</a>
+            </li>
+
+            <li class="header__item">
+              <a href="./lideranca.html" class="header__link">Liderança</a>
+            </li>
+
+            <li class="header__item">
+              <a href="./contato.html" class="header__link"
+                >Contato e Parcerias</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#menu" class="icon icon--menu icon--menu-black"></a>
+      </div>
+    </header>
+
+    <aside class="menu" id="menu">
+      <div class="menu__container container">
+        <div class="menu__top-bar">
+          <a href="./" class="menu__logo">
+            <img src="./img/logo-stem.svg" alt="STEM girls" />
+          </a>
+
+          <a href="#" class="icon icon--close"></a>
+        </div>
+
+        <div class="menu__content">
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="./" class="menu__link">Início</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="./sobre.html" class="menu__link">Sobre Nós</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="./pesquisa.html" class="menu__link"
+                  >Elas na Pesquisa</a
+                >
+              </li>
+
+              <li class="menu__item">
+                <a href="./hackstem.html" class="menu__link">HackStem</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="./lideranca.html" class="menu__link">Liderança</a>
+              </li>
+
+              <li class="menu__item">
+                <a href="./contato.html" class="menu__link"
+                  >Contato e Parcerias</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hackstem-home">
+        <div class="hackstem-home__container container">
+          <span class="hackstem-home__badge"
+            >Competição 100% online e gratuita</span
+          >
+          <h1 class="hackstem-home__title">
+            Prepare-se para o
+            <span class="hackstem-home__highlight">HackSTEM</span>
+          </h1>
+          <h2 class="hackstem-home__subtitle">
+            Sem barreiras: Tecnologia para todas, em qualquer lugar
+          </h2>
+          <p class="hackstem-home__description">
+            Uma competição de inovação para construir produtos viáveis buscando
+            resolver um problema pré-definido
+          </p>
+
+          <div class="hackstem-home__actions">
+            <a href="#" class="btn btn--secondary">Inscreva-se Agora</a>
+            <a href="#" class="btn btn--tertiary">Saiba Mais</a>
+          </div>
+
+          <ul class="hackstem-home__stats">
+            <li class="hackstem-home__item">
+              <p class="hackstem-home__number">+52</p>
+              <span class="hackstem-home__label">Equipes</span>
+            </li>
+
+            <li class="hackstem-home__item">
+              <p class="hackstem-home__number">+135</p>
+              <span class="hackstem-home__label">Participantes</span>
+            </li>
+
+            <li class="hackstem-home__item">
+              <p class="hackstem-home__number">+45</p>
+              <span class="hackstem-home__label">Mentores</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="hackstem-about">
+        <div class="hackstem-about__container container">
+          <h2 class="hackstem-about__title">O que é o HackStem?</h2>
+
+          <div class="hackstem-about__content">
+            <div class="hackstem-about__description">
+              <p class="hackstem-about__text">
+                O HackStem é uma competição online e gratuita no estilo
+                Hackathon, projetada para jovens mulheres que desejam explorar o
+                mundo da tecnologia e inovação.
+              </p>
+
+              <p class="hackstem-about__text">
+                Não é necessário nenhum conhecimento prévio sobre programação. O
+                HackStem é voltado especialmente para meninas e pessoas
+                não-binárias que desejam aprender tecnologia na prática,
+                descobrindo seu potencial de transformação.
+              </p>
+
+              <p class="hackstem-about__text">
+                Desenvolva soluções conectadas aos Objetivos de Desenvolvimento
+                Sustentável da ONU, resolvendo problemas reais na sua comunidade
+                enquanto aprende habilidades valiosas de programação, design e
+                negócios.
+              </p>
+            </div>
+
+            <div class="hackstem-about__image">
+              <img src="./img/hackstem-about.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hackstem-ods">
+        <div class="hackstem-ods__container container">
+          <h2 class="hackstem-ods__title">
+            Objetivos de desenvolvimento sustentável
+          </h2>
+          <h3 class="hackstem-ods__subtitle">
+            Resolva problemas em sua comunidade conectados a um ou mais dos ODS
+            da ONU
+          </h3>
+
+          <ul class="hackstem-ods__list">
+            <li class="hackstem-ods__item">
+              <img
+                src="./img/ods-01.svg"
+                alt="1 - Erradicação da pobreza"
+                class="hackstem-ods__image"
+              />
+            </li>
+
+            <li class="hackstem-ods__item">
+              <img
+                src="./img/ods-02.svg"
+                alt="3 - Saúde e bem-estar"
+                class="hackstem-ods__image"
+              />
+            </li>
+
+            <li class="hackstem-ods__item">
+              <img
+                src="./img/ods-03.svg"
+                alt="4 - Educação de qualidade"
+                class="hackstem-ods__image"
+              />
+            </li>
+
+            <li class="hackstem-ods__item">
+              <img
+                src="./img/ods-04.svg"
+                alt="5 - Igualdade de gênero"
+                class="hackstem-ods__image"
+              />
+            </li>
+
+            <li class="hackstem-ods__item">
+              <img
+                src="./img/ods-05.svg"
+                alt="13 - Ação contra a mudança global do clima"
+                class="hackstem-ods__image"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="hackstem-participants">
+        <div class="hackstem-participants__container container">
+          <header class="hackstem-participants__header">
+            <h2 class="hackstem-participants__title">Quem pode participar?</h2>
+            <h3 class="hackstem-participants__subtitle">
+              Diferentes formas de participar e contribuir com o HackStem
+            </h3>
+          </header>
+
+          <ul class="hackstem-participants__list">
+            <li class="hackstem-participants__item">
+              <img
+                src="./img/icons/icon-participants.svg"
+                alt=""
+                class="hackstem-participants__icon"
+                width="30px"
+                height="30px"
+              />
+              <h4 class="hackstem-participants__name">Participantes</h4>
+              <p class="hackstem-participants__description">
+                Crie soluções inovadoras
+              </p>
+
+              <h5 class="hackstem-participants__requirements-title">
+                Requisitos:
+              </h5>
+              <ul class="hackstem-participants__requirements">
+                <li class="hackstem-participants__requirement">
+                  ✓ Identificar-se como mulher ou pessoa não-binária
+                </li>
+
+                <li class="hackstem-participants__requirement">
+                  ✓ 14 a 19 anos de idade
+                </li>
+
+                <li class="hackstem-participants__requirement">
+                  ✓ Nenhuma experiência prévia necessária
+                </li>
+
+                <li class="hackstem-participants__requirement">
+                  ✓ Disponibilidade de 5–6 horas por semana
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn--primary">Inscreva-se</a>
+            </li>
+
+            <li class="hackstem-participants__item">
+              <img
+                src="./img/icons/icon-mentors.svg"
+                alt=""
+                class="hackstem-participants__icon"
+                width="30px"
+                height="30px"
+              />
+              <h4 class="hackstem-participants__name">Mentores</h4>
+              <p class="hackstem-participants__description">
+                Guie e inspire as participantes
+              </p>
+
+              <h5 class="hackstem-participants__requirements-title">
+                Requisitos:
+              </h5>
+              <ul class="hackstem-participants__requirements">
+                <li class="hackstem-participants__requirement">
+                  ✓ Qualquer gênero
+                </li>
+
+                <li class="hackstem-participants__requirement">
+                  ✓ 18 anos ou mais
+                </li>
+
+                <li class="hackstem-participants__requirement">
+                  ✓ Curso de tecnologia ou experiência na área
+                </li>
+
+                <li class="hackstem-participants__requirement">
+                  ✓ Disponibilidade de 3-5 horas por semana
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn--primary">Inscreva-se</a>
+            </li>
+
+            <li class="hackstem-participants__item">
+              <img
+                src="./img/icons/icon-judges.svg"
+                alt=""
+                class="hackstem-participants__icon"
+                width="30px"
+                height="30px"
+              />
+              <h4 class="hackstem-participants__name">Jurados</h4>
+              <p class="hackstem-participants__description">
+                Analise e avalie os projetos
+              </p>
+
+              <h5 class="hackstem-participants__requirements-title">
+                Requisitos:
+              </h5>
+              <ul class="hackstem-participants__requirements">
+                <li class="hackstem-participants__requirement">
+                  ✓ Qualquer gênero
+                </li>
+
+                <li class="hackstem-participants__requirement">
+                  ✓ 18 anos ou mais
+                </li>
+
+                <li class="hackstem-participants__requirement">
+                  ✓ Formação ou experiência em tecnologia
+                </li>
+
+                <li class="hackstem-participants__requirement">
+                  ✓ Disponibilidade de 3-5 horas por semana
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn--primary">Inscreva-se</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="hackstem-schedule">
+        <div class="hackstem-schedule__container container">
+          <header class="hackstem-schedule__header">
+            <h2 class="hackstem-schedule__title">Cronograma HackStem 3.0</h2>
+            <h3 class="hackstem-schedule__subtitle">
+              De junho a agosto de 2025
+            </h3>
+          </header>
+
+          <ul class="hackstem-schedule__list">
+            <li class="hackstem-schedule__item">
+              <span class="hackstem-schedule__number">1</span>
+
+              <div class="hackstem-schedule__description">
+                <h4 class="hackstem-schedule__name">Inscrições</h4>
+                <p class="hackstem-schedule__text">
+                  Estarão abertas as inscrições para participantes, mentores e
+                  jurados
+                </p>
+              </div>
+
+              <span class="hackstem-schedule__date"
+                >05/06<span class="hackstem-schedule__remove-mobile"
+                  >/2025</span
+                >
+                - 05/07<span class="hackstem-schedule__remove-mobile"
+                  >/2025</span
+                ></span
+              >
+            </li>
+
+            <li class="hackstem-schedule__item">
+              <span class="hackstem-schedule__number">2</span>
+
+              <div class="hackstem-schedule__description">
+                <h4 class="hackstem-schedule__name">
+                  Semana 1: Introdução e ideação
+                </h4>
+                <p class="hackstem-schedule__text">
+                  Conheça a plataforma, organize seu time e idealize seu projeto
+                </p>
+              </div>
+
+              <span class="hackstem-schedule__date"
+                >08/07<span class="hackstem-schedule__remove-mobile"
+                  >/2025</span
+                >
+                - 12/07<span class="hackstem-schedule__remove-mobile"
+                  >/2025</span
+                ></span
+              >
+            </li>
+
+            <li class="hackstem-schedule__item">
+              <span class="hackstem-schedule__number">3</span>
+
+              <div class="hackstem-schedule__description">
+                <h4 class="hackstem-schedule__name">
+                  Semana 2: Pesquisa do usuário
+                </h4>
+                <p class="hackstem-schedule__text">
+                  Pesquise necessidades reais e prototipe sua solução
+                </p>
+              </div>
+
+              <span class="hackstem-schedule__date"
+                >13/07<span class="hackstem-schedule__remove-mobile"
+                  >/2025</span
+                >
+                - 19/07<span class="hackstem-schedule__remove-mobile"
+                  >/2025</span
+                ></span
+              >
+            </li>
+
+            <li class="hackstem-schedule__item">
+              <span class="hackstem-schedule__number">4</span>
+
+              <div class="hackstem-schedule__description">
+                <h4 class="hackstem-schedule__name">
+                  Semana 3: Plano de negócios e pitch
+                </h4>
+                <p class="hackstem-schedule__text">
+                  Desenvolva seu plano de negócios e prepare o pitch
+                </p>
+              </div>
+
+              <span class="hackstem-schedule__date"
+                >20/07<span class="hackstem-schedule__remove-mobile"
+                  >/2025</span
+                >
+                - 26/07<span class="hackstem-schedule__remove-mobile"
+                  >/2025</span
+                ></span
+              >
+            </li>
+
+            <li class="hackstem-schedule__item">
+              <span class="hackstem-schedule__number">5</span>
+
+              <div class="hackstem-schedule__description">
+                <h4 class="hackstem-schedule__name">Semana 4: Entrega final</h4>
+                <p class="hackstem-schedule__text">
+                  Submeta todos os materiais do projeto
+                </p>
+              </div>
+
+              <span class="hackstem-schedule__date"
+                >27/07<span class="hackstem-schedule__remove-mobile"
+                  >/2025</span
+                >
+                - 30/07<span class="hackstem-schedule__remove-mobile"
+                  >/2025</span
+                ></span
+              >
+            </li>
+
+            <li class="hackstem-schedule__item">
+              <span class="hackstem-schedule__number">6</span>
+
+              <div class="hackstem-schedule__description">
+                <h4 class="hackstem-schedule__name">Avaliações</h4>
+                <p class="hackstem-schedule__text">
+                  Avaliação dos projetos pelos jurados
+                </p>
+              </div>
+
+              <span class="hackstem-schedule__date"
+                >31/07<span class="hackstem-schedule__remove-mobile"
+                  >/2025</span
+                >
+                - 16/08<span class="hackstem-schedule__remove-mobile"
+                  >/2025</span
+                ></span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="hackstem-awards">
+        <div class="hackstem-awards__container container">
+          <header class="hackstem-awards__header">
+            <h2 class="hackstem-awards__title">Premiações</h2>
+            <h3 class="hackstem-awards__subtitle">
+              Mais informações no
+              <a href="#" class="hackstem-awards__link">regulamento</a>
+            </h3>
+          </header>
+
+          <div class="hackstem-awards__cards">
+            <div class="hackstem-awards__card hackstem-awards__card--first">
+              <span class="hackstem-awards__badge">1º LUGAR</span>
+
+              <ul class="hackstem-awards__list">
+                <li class="hackstem-awards__item">✓ R$ 15.000,00</li>
+                <li class="hackstem-awards__item">✓ Medalhas de ouro</li>
+                <li class="hackstem-awards__item">
+                  ✓ Assinatura anual da plataforma L&L completa
+                </li>
+                <li class="hackstem-awards__item">
+                  ✓ Mentoria de carreira com as desenvolvedoras Luiza Pinheiro e
+                  Luiza Cubines
+                </li>
+              </ul>
+            </div>
+
+            <div class="hackstem-awards__card hackstem-awards__card--second">
+              <span class="hackstem-awards__badge">2º LUGAR</span>
+
+              <ul class="hackstem-awards__list">
+                <li class="hackstem-awards__item">✓ R$ 7.500,00</li>
+                <li class="hackstem-awards__item">✓ Medalhas de prata</li>
+                <li class="hackstem-awards__item">
+                  ✓ Assinatura semestral da plataforma L&L completa
+                </li>
+                <li class="hackstem-awards__item">
+                  ✓ Mentoria de carreira com as desenvolvedoras Luiza Pinheiro e
+                  Luiza Cubines
+                </li>
+              </ul>
+            </div>
+
+            <div class="hackstem-awards__card hackstem-awards__card--third">
+              <span class="hackstem-awards__badge">3º LUGAR</span>
+
+              <ul class="hackstem-awards__list">
+                <li class="hackstem-awards__item">✓ R$ 3.750,00</li>
+                <li class="hackstem-awards__item">✓ Medalhas de bronze</li>
+                <li class="hackstem-awards__item">
+                  ✓ Mentoria de carreira do programa Edulabs com Gabrielle
+                  Rodrigues
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hackstem-partners">
+        <div class="hackstem-partners__container container">
+          <header class="hackstem-partners__header">
+            <h2 class="hackstem-partners__title">Parceiros</h2>
+            <a href="#" class="btn btn--primary">Faça parte</a>
+          </header>
+          <ul class="hackstem-partners__list">
+            <li class="hackstem-partners__item">
+              <a
+                href="
+              #"
+                class="hackstem-partners__link"
+                ><img
+                  src="./img/partners/usp.svg"
+                  alt="USP"
+                  class="hackstem-partners__logo"
+              /></a>
+            </li>
+
+            <li class="hackstem-partners__item">
+              <a
+                href="
+              #"
+                class="hackstem-partners__link"
+              >
+                <img
+                  src="./img/partners/fiap.svg"
+                  alt="FIAP"
+                  class="hackstem-partners__logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contato">
+      <div class="footer-content">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="./img/logo-black.svg" alt="STEM girls" />
+            </div>
+            <p class="brand-description">
+              Promovendo oportunidades em Ciência, Tecnologia, Engenharia e
+              Matemática (STEM) para meninas e mulheres de todo o Brasil.
+            </p>
+
+            <div class="social-links">
+              <a
+                href="[LINK_INSTAGRAM]"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="[LINK_REDE_SOCIAL]"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Rede Social"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="[LINK_WHATSAPP]"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="WhatsApp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-title">Navegação</h4>
+            <nav>
+              <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#como-apoiar">Como Apoiar</a></li>
+                <li><a href="#contato">Contato</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="footer-title">Fale Conosco</h4>
+            <ul>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:email@ong.com.br">contato@stemgirls.com</a>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>55 11 984567382</span>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>São Paulo/SP</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-large-logo">
+            <img src="./img/logo-purple.svg" alt="STEM girls" />
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-credits">
+          <div class="credits-text">
+            <p>&copy; 2025 STEM girls. Todos os direitos reservados.</p>
+            <p class="institute-credit">
+              Desenvolvido com <i class="fas fa-heart"></i> pelo
+              <a
+                href="https://www.instagram.com/code4causes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="institute-link"
+                >Instituto Code for Causes</a
+              >
+            </p>
+          </div>
+          <div class="credits-links">
+            <a href="#">Política de Privacidade</a>
+            <span class="separator">|</span>
+            <a href="#">Termos de Uso</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
