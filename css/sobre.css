@@ -723,6 +723,9 @@ main {
 }
 
 @media (max-width: 768px) {
+  .sobre-historia {
+    padding-top: 120px;
+  }
   .sobre-historia__container {
     grid-template-columns: 1fr;
     gap: 40px;
